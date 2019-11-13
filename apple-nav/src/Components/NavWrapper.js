@@ -5,10 +5,10 @@ import SubNav from './SubNav'
 
 function NavWrapper(){
     return (
-        <div>
-            <nav>
+        <div className="navBar">
+            <nav className="topNav">
                 {NavData.map((item) => {
-                    return <NavLink to={item.name} key={item.name} className="navLinks">{item.name}</NavLink>
+                    return <NavLink to={item.name} key={item.name} className="topNavLinks">{item.name}</NavLink>
                 })}
             </nav>
                 {NavData.map((item) => {

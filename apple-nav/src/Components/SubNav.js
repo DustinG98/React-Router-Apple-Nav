@@ -4,9 +4,9 @@ import {NavLink} from 'react-router-dom';
 function SubNav(props){
     let links = props.links;
     return (
-        <div>
+        <div className="subNav">
             {(links !== undefined) ? links.map((item) => {
-            return <NavLink to={`/${item.name}`} className="subLink">{item.name}
+            return <NavLink to={`/${item.name}`} className="subNavItems">{item.name}
             <img src={item.img} alt=""/>
             </NavLink>
             }): null}
